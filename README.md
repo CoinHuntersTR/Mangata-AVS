@@ -89,18 +89,17 @@ sudo cp eigenlayer-cli/build/eigenlayer /usr/local/bin/
 
 
 
-> Kapalı parantez dahil, `<key-ismi>` değiştirin, <> parantezleri kaldırın..
+> Kapalı parantez dahil, `<key-ismi>` değiştirin, <> parantezleri kaldırın.
+
+![Ekran görüntüsü 2024-02-08 124148](https://github.com/CoinHuntersTR/Mangata-AVS/assets/111747226/6b7700d0-d255-4e63-8162-54a8309af9cb)
 
 ```
 eigenlayer operator keys create --key-type ecdsa <key-ismi>
 ```
+
 > Bu komuttan sonra şifre oluşturmanızı isteyecek, şifre karmaşık olmalı. Aynı şifreyi iki kere gireceğiz.
 
 ![Ekran görüntüsü 2024-02-08 124257](https://github.com/CoinHuntersTR/Mangata-AVS/assets/111747226/ea8a2804-7875-4a29-b102-e1848e3e1085)
-
-> Şifreni kabul ettikten sonra;
-
-![Ekran görüntüsü 2024-02-08 124148](https://github.com/CoinHuntersTR/Mangata-AVS/assets/111747226/6b7700d0-d255-4e63-8162-54a8309af9cb)
 
 > `ecdsa` KEY bize bir `EVM` adresi, `private key` ve dosya `path` (yolu) verecek
 
@@ -108,13 +107,23 @@ eigenlayer operator keys create --key-type ecdsa <key-ismi>
 
 ![Ekran görüntüsü 2024-02-08 124603](https://github.com/CoinHuntersTR/Mangata-AVS/assets/111747226/bed08b0c-2706-4a95-b2ae-37dbf7184a75)
 
-
+> Kapalı parantez dahil, `<key-ismi>` değiştirin, <> parantezleri kaldırın.
+![Ekran görüntüsü 2024-02-08 125720](https://github.com/CoinHuntersTR/Mangata-AVS/assets/111747226/fe3d4dc1-d278-4801-bf68-11fb32b12236)
 ```
 eigenlayer operator keys create --key-type bls <key-ismi>
 ```
+> Bu komuttan sonra şifre oluşturmanızı isteyecek, şifre karmaşık olmalı. Aynı şifreyi iki kere gireceğiz.
+
+![Ekran görüntüsü 2024-02-08 125831](https://github.com/CoinHuntersTR/Mangata-AVS/assets/111747226/2ad73b8c-06f4-49a8-9ca4-019aee6e43fb)
+
 > `bls` KEY ise bir `private key` verecek. Hepsini kayıt edelim.
 
+![Ekran görüntüsü 2024-02-08 125927](https://github.com/CoinHuntersTR/Mangata-AVS/assets/111747226/5a2ca0fe-0e87-4141-a25f-193acf14735b)
+
 > Keyleri listeyerek dosya yollarını kontrol ediyoruz.
+
+![Ekran görüntüsü 2024-02-08 130326](https://github.com/CoinHuntersTR/Mangata-AVS/assets/111747226/58803415-318c-4750-bcc9-63470a3374ab)
+
 ```
-eigenlayer operator keys create --key-type bls <key-ismi>
+eigenlayer operator keys list
 ```

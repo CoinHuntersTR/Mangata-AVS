@@ -85,24 +85,38 @@ cd
 ```
 sudo cp eigenlayer-cli/build/eigenlayer /usr/local/bin/
 ```
-> Altta ki komutlar ile KEY'ler oluşturuyoruz.
 
-> `ecdsa` KEY bize bir `EVM` adresi, `private key` ve dosya `path` (yolu) verecek
 
-> `bls` KEY ise bir `private key` verecek. Hepsini kayıt edelim.
+
 
 > Kapalı parantez dahil, `<key-ismi>` değiştirin, <> parantezleri kaldırın..
 
 > Her komuttan sonra şifre oluşturmanızı isteyecek, şifre karmaşık olmalı.
+
+![Ekran görüntüsü 2024-02-08 124257](https://github.com/CoinHuntersTR/Mangata-AVS/assets/111747226/ea8a2804-7875-4a29-b102-e1848e3e1085)
 
 > Örnek şifre Özel karakterler kullanarak güçlü bir şifre oluştur ve kaybetme.
 
 ```
 eigenlayer operator keys create --key-type ecdsa <key-ismi>
 ```
+
+![Ekran görüntüsü 2024-02-08 124148](https://github.com/CoinHuntersTR/Mangata-AVS/assets/111747226/6b7700d0-d255-4e63-8162-54a8309af9cb)
+
+> Her komuttan sonra şifre oluşturmanızı isteyecek, şifre karmaşık olmalı. Aynı şifreyi iki kere gireceğiz.
+
+> `ecdsa` KEY bize bir `EVM` adresi, `private key` ve dosya `path` (yolu) verecek
+
+> Buradaki bilgiler sizde de benzer şekilde çıkacak güvenli şekilde saklayın.
+
+![Ekran görüntüsü 2024-02-08 124603](https://github.com/CoinHuntersTR/Mangata-AVS/assets/111747226/bed08b0c-2706-4a95-b2ae-37dbf7184a75)
+
+
 ```
 eigenlayer operator keys create --key-type bls <key-ismi>
 ```
+> `bls` KEY ise bir `private key` verecek. Hepsini kayıt edelim.
+
 > Keyleri listeyerek dosya yollarını kontrol ediyoruz.
 ```
 eigenlayer operator keys create --key-type bls <key-ismi>

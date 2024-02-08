@@ -186,3 +186,52 @@ eigenlayer operator config create
 ![Ekran görüntüsü 2024-02-08 132500](https://github.com/CoinHuntersTR/Mangata-AVS/assets/111747226/d0f36811-e5e5-40b2-8fb5-2313d8b874b0)
 
 > Bu bize operator.yaml ve metadata.json dosyalarını oluşturacak.
+
+### Metadata İşlemleri
+
+```
+nano metadata.json
+```
+> Bu komutu çalıştırıp dosyanın içine girelim.
+
+![Ekran görüntüsü 2024-02-08 132835](https://github.com/CoinHuntersTR/Mangata-AVS/assets/111747226/82ecf316-d0c5-4e81-ba91-5723bbe1af59)
+
+> Bunun içindeki bilgileri dolduralım. Dolu hali
+
+![Ekran görüntüsü 2024-02-08 133210](https://github.com/CoinHuntersTR/Mangata-AVS/assets/111747226/7901b26e-0181-4618-9ad6-e0026e8c58c4)
+
+> Bu şekilde dolduruyoruz. Sonra Bu doldurduğumuz bilgileri kopyalayıp bir yere not edelim.
+
+### Raw Public Linki oluşturma
+> Kendi Github sayfamızda Repositories sayfasına gidiyoruz sağda bulunan NEW butonuna basıyoruz.
+
+![Ekran görüntüsü 2024-02-08 133334](https://github.com/CoinHuntersTR/Mangata-AVS/assets/111747226/871e6659-0bee-4b97-8069-743043525638)
+
+> Reposity Name bölümüne magnata diye isim veriyoruz Public seçiyoruz. En altta Create Repository diyoruz.
+
+![Ekran görüntüsü 2024-02-08 133703](https://github.com/CoinHuntersTR/Mangata-AVS/assets/111747226/6042f423-b202-451f-a221-b59a9df72a23)
+
+> Sonrasında size aşağıdaki gibi bir sayfa çıkacak orada READ ME seçip repoyu oluşturun.
+
+![Ekran görüntüsü 2024-02-08 133746](https://github.com/CoinHuntersTR/Mangata-AVS/assets/111747226/00b5f656-fe47-4083-8c6d-d8c1f2a54ee1)
+
+> Sağ bölümde Add File seçeneği var ona basın. Create File var ona basın.
+
+![Ekran görüntüsü 2024-02-08 133906](https://github.com/CoinHuntersTR/Mangata-AVS/assets/111747226/628481cb-9512-414c-be6a-12e03990985a)
+
+> Create File sekmesine geldiğinizde Aşağıdaki görselde olduğu gibi işlemlerinizi yapın. Node içine yazdığımız bilgilerin aynısı burada olacak.
+
+![Ekran görüntüsü 2024-02-08 134122](https://github.com/CoinHuntersTR/Mangata-AVS/assets/111747226/e4867bdc-178b-4614-8682-0e1000b8bd9a)
+
+> Bu adımları yaptıktan sonra Commit tuşuna basıyoruz.
+
+> Commit tuşuna bastıktan sonra dosyamız yayınlanacak o dosya repo içinden basıp ulaşıyoruz. Sağ bölümde RAW kısmı var ona basıyoruz.
+
+![Ekran görüntüsü 2024-02-08 134215](https://github.com/CoinHuntersTR/Mangata-AVS/assets/111747226/fceedaa1-8be7-412f-9f42-3a6c6371dd77)
+
+> Raw tuşuna bastıktan sonra size tarayıcı da yeni bir sayfa açacaktır. Tarayıcıdaki URL bir yere not edin.
+
+![Ekran görüntüsü 2024-02-08 134338](https://github.com/CoinHuntersTR/Mangata-AVS/assets/111747226/e1c4b158-4adb-4aa1-838a-d2e8d6e94a9b)
+
+
+

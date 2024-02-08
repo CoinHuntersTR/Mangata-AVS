@@ -91,19 +91,16 @@ sudo cp eigenlayer-cli/build/eigenlayer /usr/local/bin/
 
 > Kapalı parantez dahil, `<key-ismi>` değiştirin, <> parantezleri kaldırın..
 
-> Her komuttan sonra şifre oluşturmanızı isteyecek, şifre karmaşık olmalı.
-
-![Ekran görüntüsü 2024-02-08 124257](https://github.com/CoinHuntersTR/Mangata-AVS/assets/111747226/ea8a2804-7875-4a29-b102-e1848e3e1085)
-
-> Örnek şifre Özel karakterler kullanarak güçlü bir şifre oluştur ve kaybetme.
-
 ```
 eigenlayer operator keys create --key-type ecdsa <key-ismi>
 ```
+> Bu komuttan sonra şifre oluşturmanızı isteyecek, şifre karmaşık olmalı. Aynı şifreyi iki kere gireceğiz.
+
+![Ekran görüntüsü 2024-02-08 124257](https://github.com/CoinHuntersTR/Mangata-AVS/assets/111747226/ea8a2804-7875-4a29-b102-e1848e3e1085)
+
+> Şifreni kabul ettikten sonra;
 
 ![Ekran görüntüsü 2024-02-08 124148](https://github.com/CoinHuntersTR/Mangata-AVS/assets/111747226/6b7700d0-d255-4e63-8162-54a8309af9cb)
-
-> Her komuttan sonra şifre oluşturmanızı isteyecek, şifre karmaşık olmalı. Aynı şifreyi iki kere gireceğiz.
 
 > `ecdsa` KEY bize bir `EVM` adresi, `private key` ve dosya `path` (yolu) verecek
 

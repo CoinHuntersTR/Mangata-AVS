@@ -127,3 +127,4 @@ eigenlayer operator keys create --key-type bls <key-ismi>
 ```
 eigenlayer operator keys list
 ```
+## Operatör Kaydı

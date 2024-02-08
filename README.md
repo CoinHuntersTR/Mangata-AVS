@@ -128,3 +128,61 @@ eigenlayer operator keys create --key-type bls <key-ismi>
 eigenlayer operator keys list
 ```
 ## Operatör Kaydı
+
+```
+eigenlayer operator config create
+```
+
+> Sırasıyla bunlarıda yazıyorum kolaylık için, en aşağıda görselide olcak:
+
+> y diyoruz
+
+![Ekran görüntüsü 2024-02-08 131009](https://github.com/CoinHuntersTR/Mangata-AVS/assets/111747226/c244182d-dc95-45f8-a261-479c0fc6ec94)
+
+> operator adresi olarak, `ecdsa key` oluşturduğumuzda verdiği `evm` adresini girin.
+
+![Ekran görüntüsü 2024-02-08 131052](https://github.com/CoinHuntersTR/Mangata-AVS/assets/111747226/b75faaf0-c48e-47ec-885e-6e59ccca4199)
+
+> earning operator adres yine aynı ecdsa-evm adresi girin, yukarıdaki ile aynı.
+
+![Ekran görüntüsü 2024-02-08 131125](https://github.com/CoinHuntersTR/Mangata-AVS/assets/111747226/696b50cf-d746-427f-a25e-48e7b27cb7c4)
+
+### Public RPC alma;
+
+> goerli eth RPC isteyecek, [BURADAN](https://app.infura.io/) siteye gidiyoruz.
+
+![Ekran görüntüsü 2024-02-08 131453](https://github.com/CoinHuntersTR/Mangata-AVS/assets/111747226/d7926aad-df66-483c-bd80-102416a48eda)
+
+İlk olarak kaydınız yok ise kayıt olun, varsa giriş yapın.
+
+![Ekran görüntüsü 2024-02-08 131720](https://github.com/CoinHuntersTR/Mangata-AVS/assets/111747226/e122cc33-e5c4-4f3e-99ce-5965efca7acc)
+
+> Resimdeki gibi bir isim girip CREATE diyoruz.
+
+![Ekran görüntüsü 2024-02-08 131825](https://github.com/CoinHuntersTR/Mangata-AVS/assets/111747226/7e6eb414-9bc7-4343-9d94-39bdfe3ce767)
+
+> Ethereıum Goerli Seçiyoruz ve Save Changes butonuna basıyoruz.
+
+![Ekran görüntüsü 2024-02-08 131938](https://github.com/CoinHuntersTR/Mangata-AVS/assets/111747226/c3293b6c-7ff8-45e0-a617-2c5ebbddefaa)
+
+> Bu şekilde bir https adresi verecek onu bir yere not edelim.
+
+![Ekran görüntüsü 2024-02-08 132102](https://github.com/CoinHuntersTR/Mangata-AVS/assets/111747226/2153a821-4c02-47b6-ae8d-7c417c7a78f8)
+
+> WebSockets bölümüne gidip oradaki adresi de bir yere not edelim. Lazım olacak.
+
+#### Kaldığımız yerden devam edelim;
+
+> `ecdsa key` oluşturduğumuzda bize verdiği key pathi tam şekilde giriyoruz
+
+![Ekran görüntüsü 2024-02-08 132339](https://github.com/CoinHuntersTR/Mangata-AVS/assets/111747226/7b60b405-61cf-4a34-80e9-d2f1e2274458)
+
+> aynı şekilde `bls key` path giriyoruz - path ne olduğunu bilmeyenler için görsele bakabilir
+
+![Ekran görüntüsü 2024-02-08 132423](https://github.com/CoinHuntersTR/Mangata-AVS/assets/111747226/21decadb-afff-4eb2-9ec1-585803762ccb)
+
+> goerli seçiyoruz ve bitiyor. Aşağıda tamamlanmış halinin resmini ekledim.
+
+![Ekran görüntüsü 2024-02-08 132500](https://github.com/CoinHuntersTR/Mangata-AVS/assets/111747226/d0f36811-e5e5-40b2-8fb5-2313d8b874b0)
+
+> Bu bize operator.yaml ve metadata.json dosyalarını oluşturacak.

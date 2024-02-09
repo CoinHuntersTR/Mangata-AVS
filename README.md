@@ -249,18 +249,99 @@ nano operator.yaml
 
 ![Ekran görüntüsü 2024-02-09 090022](https://github.com/CoinHuntersTR/Mangata-AVS/assets/111747226/624afc6b-dee8-473d-810f-fc10d3a489df)
 
-> Node için kurduğumuz cüzdana 0,5 - 1 arasında GOERLİ ETH gönderelim. Yeni cüzdana ETH geçtikten sonra;
+> Node içinde aldığınız Private Key dosyasını metamask içine import ediyoruz.
+
+> Metamask> Account basıyoruz => En altta Add Account kısmı var ona basıyoruz => Hesabı içe aktar seçeneğine basıyoruz. => Sonrasında node içinden aldığımız private key girip import işlemini tamamlıyoruz. 
+
+> Node için kurduğumuz cüzdana 0,5 - 1 arasında GOERLİ ETH gönderelim. Yeni cüzdana ETH geçtikten sonra; (Eğer goerli ETH bulamazsanız daha düşük miktarlar da olur.)
+
 
 ```
 eigenlayer operator register operator.yaml
 ```
-> komutunu çalıştırıp. Logların akmasının bitmesini bekliyoruz.
 
+> komutunu çalıştırıp. Hem edsa hem bls şifremizi girip Logların akmasının bitmesini bekliyoruz.
 
+```
+eigenlayer operator status operator.yaml
+```
 
+> Durum kontrolü yapıyoruz. Aşağıdaki gibi çıktı almanız gerekiyor.
 
+![Ekran görüntüsü 2024-02-09 091954](https://github.com/CoinHuntersTR/Mangata-AVS/assets/111747226/94f5b712-2163-4989-a295-d1c4f36d3b44)
 
- 
+```
+eigenlayer operator update operator.yaml
+```
+> Meta data üzerinde herhangi bir değişiklik yaparsanız, bu komut ile güncellemeyi unutmayın.
+
+## Mangata VS Kurulumu
+
+> [BURADAN](https://app.uniswap.org/swap) Uniswap'a gidiyoruz. Goereli Ağında yeni kurduğumuz cüzdan ile bağlanıyoruz. 
+
+> İlk rETH alacağız. `rETH=0x178e141a0e3b34152f73ff610437a7bf9b83267a` kontrat adresi ile uniswapta aratıp bir miktar alıyoruz.
+
+> Şimdi de sETH alıyoruz. `sETH= 0x1643e812ae58766192cf7d2cf9567df2c37e9b7f` kontrat adresi ile uniswapta aratıp bir miktar alıyoruz.
+
+> [BURADAN](https://goerli.eigenlayer.xyz/) sETH ve rETH poollarına stake ediyoruz.
+
+> Stake adımları tamamlandıktan sonra Terminalden adımlarımıza devam edelim
+
+```
+git clone https://github.com/mangata-finance/avs-operator-setup.git
+```
+
+```
+cd avs-operator-setup
+```
+
+```
+chmod +x run.sh
+```
+
+```
+nano .env
+```
+
+![Ekran görüntüsü 2024-02-09 094222](https://github.com/CoinHuntersTR/Mangata-AVS/assets/111747226/694b9ef6-152d-4eb3-9046-fb44f8e435dd)
+
+> Ekrana böyle bir sayfa gelecek buradaki düzenlememizi yapıyoruz.
+
+> `ETH_RPC_URL` buraya infuradan aldığımız https olan PRC adresini giriyoruz.
+> `ETH_WS_URL` buraya infura WSS linki giriliyor.
+> `ECDSA_KEY_FILE_HOST` buradaki dosya yolunu silip node içinden alıp kaydettiğimi ECDSA key dosya yolunu ekliyoruz.
+> `BLS_KEY_FILE_HOST`buradaki dosya yolunu silip bls dosya yolunu ekliyoruz.
+> `ECDSA_KEY_PASSWORD` buraya ecdsa için verdiğimiz şifreyi giriyoruz.
+> `BLS_KEY_FILE_HOST` buraya bls için verdiğimiz şifreyi giriyoruz.
+> Bu adımları tamamladıktan sonra CTRL X + Y Enter yaparak çıkıyoruz.
+
+```
+./run.sh opt-in
+```
+
+```
+docker compose up -d
+```
+> Docker contianer id bulmak için
+
+```
+docker ps
+```
+> aldığınız ID ile aşağıdaki komutu girip, log kayıtlarının akmasını bekliyoruz.
+
+```
+docker logs -f <container_id>
+```
+> Aşağıdakine benzer şekilde log kayıtlarınız akmış olacak.
+
+![Ekran görüntüsü 2024-02-09 095454](https://github.com/CoinHuntersTR/Mangata-AVS/assets/111747226/4b0ac864-080f-4571-b885-0d4b652b5b36)
+
+> [BURADAN](https://discord.gg/mangata) Mangata'nın discord kanalına gidip Verify sonrasında #AVS Operator kanalına, yukarıdaki gibi görseli atıp Node Runner rolümüzü isteyelim.
+
+> Bu arada Dokümanın orjinali'ne [BURADAN](https://github.com/ruesandora/mangata-AVS/blob/main/README.md) ulaşabilirsiniz. Rues hazırladığı dokümanı kullandım ve yeni başlayanlar için ayrıntıları ekledim.
+
+> Rues reposunda ödüllü olduğunu ve KYC yapılabileceğini belirtmiş. Ona göre kendi kararınızı verebilirsiniz.
+
 
 
 

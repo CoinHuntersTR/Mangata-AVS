@@ -270,6 +270,7 @@ eigenlayer operator status operator.yaml
 
 ![Ekran görüntüsü 2024-02-09 091954](https://github.com/CoinHuntersTR/Mangata-AVS/assets/111747226/94f5b712-2163-4989-a295-d1c4f36d3b44)
 
+> **Önemli!! ilk kez kuruyorsan ve metadata değişiklik yapmadıysan bu komutu girmene gerek yok!
 ```
 eigenlayer operator update operator.yaml
 ```

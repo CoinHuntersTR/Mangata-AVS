@@ -233,5 +233,34 @@ nano metadata.json
 
 ![Ekran görüntüsü 2024-02-08 134338](https://github.com/CoinHuntersTR/Mangata-AVS/assets/111747226/e1c4b158-4adb-4aa1-838a-d2e8d6e94a9b)
 
+### Yukarıdaki adımları hallettiysek devam edelim
+
+```
+nano operator.yaml
+```
+
+> metadata_url için metadata.json dosyamızın public raw linkini kullanacağız.
+
+> el_slasher_address için: 0x3865B5F5297f86c5295c7f818BAD1fA5286b8Be6
+
+> bls_public_key_compendium_address için: 0xc81d3963087Fe09316cd1E032457989C7aC91b19
+
+> Adımları düzgünce eklediysek CTRL + X + Y Enter yapıp çıkıyoruz. Aşağıya görselini de ekledim.
+
+![Ekran görüntüsü 2024-02-09 090022](https://github.com/CoinHuntersTR/Mangata-AVS/assets/111747226/624afc6b-dee8-473d-810f-fc10d3a489df)
+
+> Node için kurduğumuz cüzdana 0,5 - 1 arasında GOERLİ ETH gönderelim. Yeni cüzdana ETH geçtikten sonra;
+
+```
+eigenlayer operator register operator.yaml
+```
+> komutunu çalıştırıp. Logların akmasının bitmesini bekliyoruz.
+
+
+
+
+
+ 
+
 
 

@@ -308,11 +308,17 @@ nano .env
 > Ekrana böyle bir sayfa gelecek buradaki düzenlememizi yapıyoruz.
 
 > `ETH_RPC_URL` buraya infuradan aldığımız https olan PRC adresini giriyoruz.
+
 > `ETH_WS_URL` buraya infura WSS linki giriliyor.
+
 > `ECDSA_KEY_FILE_HOST` buradaki dosya yolunu silip node içinden alıp kaydettiğimi ECDSA key dosya yolunu ekliyoruz.
+
 > `BLS_KEY_FILE_HOST`buradaki dosya yolunu silip bls dosya yolunu ekliyoruz.
+
 > `ECDSA_KEY_PASSWORD` buraya ecdsa için verdiğimiz şifreyi giriyoruz.
+
 > `BLS_KEY_FILE_HOST` buraya bls için verdiğimiz şifreyi giriyoruz.
+
 > Bu adımları tamamladıktan sonra CTRL X + Y Enter yaparak çıkıyoruz.
 
 ```

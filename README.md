@@ -177,10 +177,12 @@ eigenlayer operator config create
 
 ![Ekran görüntüsü 2024-02-08 132339](https://github.com/CoinHuntersTR/Mangata-AVS/assets/111747226/7b60b405-61cf-4a34-80e9-d2f1e2274458)
 
+### Bu bölüm yeni güncellemede İPTAL bu path girmeden devam ediyoruz.!!
 > aynı şekilde `bls key` path giriyoruz - path ne olduğunu bilmeyenler için görsele bakabilir
 
 ![Ekran görüntüsü 2024-02-08 132423](https://github.com/CoinHuntersTR/Mangata-AVS/assets/111747226/21decadb-afff-4eb2-9ec1-585803762ccb)
 
+### Buradan devam
 > goerli seçiyoruz ve bitiyor. Aşağıda tamamlanmış halinin resmini ekledim.
 
 ![Ekran görüntüsü 2024-02-08 132500](https://github.com/CoinHuntersTR/Mangata-AVS/assets/111747226/d0f36811-e5e5-40b2-8fb5-2313d8b874b0)
@@ -240,11 +242,11 @@ nano operator.yaml
 ```
 
 > metadata_url için metadata.json dosyamızın public raw linkini kullanacağız.
-
+### Buradaki slashr ve compendium kısımları iptal!!
 > el_slasher_address için: 0x3865B5F5297f86c5295c7f818BAD1fA5286b8Be6
 
 > bls_public_key_compendium_address için: 0xc81d3963087Fe09316cd1E032457989C7aC91b19
-
+### sadece Raw linkini ekleyip devam ediyoruz.
 > Adımları düzgünce eklediysek CTRL + X + Y Enter yapıp çıkıyoruz. Aşağıya görselini de ekledim.
 
 ![Ekran görüntüsü 2024-02-09 090022](https://github.com/CoinHuntersTR/Mangata-AVS/assets/111747226/624afc6b-dee8-473d-810f-fc10d3a489df)
@@ -277,6 +279,8 @@ eigenlayer operator update operator.yaml
 > Meta data üzerinde herhangi bir değişiklik yaparsanız, bu komut ile güncellemeyi unutmayın.
 
 ## Mangata VS Kurulumu
+
+### Önemli rETH ve sETH TVL miktarınız yani platforma stake miktarınızın toplamı 0,3-0,35'den fazla olmalıdır. Birazını rETH, birazını da sETH yaparak eklersiniz.
 
 > [BURADAN](https://app.uniswap.org/swap) Uniswap'a gidiyoruz. Goereli Ağında yeni kurduğumuz cüzdan ile bağlanıyoruz. 
 
@@ -349,6 +353,19 @@ docker logs -f <container_id>
 
 > Rues reposunda ödüllü olduğunu ve KYC yapılabileceğini belirtmiş. Ona göre kendi kararınızı verebilirsiniz.
 
+### Daha önce kurupta blokları duranlar için
 
+> rETH ve sETH TVL miktarınızı arttırın min 0,30 olmalı.
 
+> Sonrasında docker durdurmamaız gerekiyor.
 
+```
+sudo docker stop $(sudo docker ps -aq)
+```
+
+> TVL miktarınızı arttırdıktan sonra, dashboard üzerinden stake yaparak arttırabilirsiniz.
+
+> Tekrar başlatıyoruz.
+```
+sudo docker restart $(sudo docker ps -aq)
+```

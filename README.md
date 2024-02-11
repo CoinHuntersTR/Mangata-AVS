@@ -241,8 +241,6 @@ nano operator.yaml
 
 > Adımları düzgünce eklediysek CTRL + X + Y Enter yapıp çıkıyoruz. Aşağıya görselini de ekledim.
 
-![Ekran görüntüsü 2024-02-09 090022](https://github.com/CoinHuntersTR/Mangata-AVS/assets/111747226/624afc6b-dee8-473d-810f-fc10d3a489df)
-
 > Node içinde aldığınız Private Key dosyasını metamask içine import ediyoruz.
 
 > Metamask> Account basıyoruz => En altta Add Account kısmı var ona basıyoruz => Hesabı içe aktar seçeneğine basıyoruz. => Sonrasında node içinden aldığımız private key girip import işlemini tamamlıyoruz. 

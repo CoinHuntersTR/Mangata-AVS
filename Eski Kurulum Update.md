@@ -57,7 +57,7 @@ eigenlayer operator config create
 ```
 nano operator.yaml
 ```
-> Güthub üzerinden yüklediğimiz raw linkini alıyoruz ve metadata_url bölümmüne giriyoruz.
+> Github üzerinden yüklediğimiz raw linkini alıyoruz ve metadata_url bölümmüne giriyoruz.
 
 > el_delegation_manager_address: 0x1b7b8F6b258f95Cf9596EabB9aa18B62940Eb0a8 bölümünde bu adres yazıyor olmalı.
 

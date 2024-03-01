@@ -356,7 +356,8 @@ docker logs -f <container_id>
 > Güncelleme adımlarına başlayalım. 
 
 > Unutmadan Stake yaptığınız rETH ve sETH miktarlarının toplamının 1ETH yi geçmesi veya eşit olması şart.
-> [TIKLA](https://goerli.eigenlayer.xyz/) Aşağıdaki gibi 1ETH yi geçmiş olmalı
+
+> [TIKLA](https://goerli.eigenlayer.xyz/) Aşağıdaki gibi 1ETH yi geçmiş veya eşit olmalı
 ![resim](https://github.com/CoinHuntersTR/Mangata-AVS/assets/63106683/62f8e068-a665-489c-9c4f-22ed776604c7)
 
 ```
